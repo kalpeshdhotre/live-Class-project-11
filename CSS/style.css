@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap'); */
+
+*{
+    margin: 0;
+    border: 0;    
+    font-family: Poppins;
+    font-weight: 200;
+}
+
+.container{
+    display: block;
+    width: 1600px;
+    /* border: solid; */
+    margin: auto;    
+    box-shadow: 0px 10px 14px -7px #505050;
+}
+/* =================contains logo, menu item and REgister now button ================ */
+.header{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* border: solid; */
+    padding: 25px;
+}
+
+.logo{
+    display: block;
+    /* border: solid; */
+    width: 430px;
+}
+
+.menu-items{
+    display: flex;
+    list-style: none;   
+    /* border: solid; */
+    width: 800px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.register-now{
+    width: 200px;
+    border: 2px #24A7FF solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #24A7FF;
+    background-color: #ffff;
+}
+
+.register-now:hover{
+    color: #fff;
+    background-color: #24A7FF;
+}
+
+/* this section contains main highlight with their pictures */
+
+.main-highlight{
+    display: grid;        
+}
+
+.main-highlight-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: solid; */
+    padding-top: 70px;
+    padding-bottom: 35px;
+}
+
+.main-highlight-image{
+    /* border: solid; */
+    width: 600px;
+    height: 500px;
+}
+
+.right-side{
+    /* border: red solid; */
+    width: 850px;
+    display: grid;
+    padding-left: 100px;
+}
+
+.main{  /* button */
+    width: 180px;
+    height: 50px;
+    color: #ffff;
+    /* background-color: #0680EF; */
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #067eef9d 5%, #0680EF 100%);
+    border-radius: 8px;
+    font-weight: 400;
+}
+
+.right-side h1{
+    font-family: Kanit;
+    font-size: 50px;
+}
+
+.right-side h4{
+    font-family: poppins;
+    color: #758283;
+}
+
+/* Main highlight section end */
+
+/* Services section */
+.services{
+    display: grid;
+}
+
+.services-heading{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.services-heading h1{
+    font-family: Kanit;
+    font-size: 45px;
+    letter-spacing: 2px;    
+}
+.services-heading h4{
+    padding-top: 25px;
+    font-family: Kanit;
+    font-size: 15px;
+    color: #758283;
+}
+
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: solid; */
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 700px;
+    gap: 65px;
+    /* width: 1400px; */
+}
+
+.service-card h2{
+    font-family: kanit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.service-card h4{
+    font-size: 15px;
+    color: #758283;
+}
+
+/* Service section Ends */
+
+/* Pricing section start */
+
+.pricing{
+    display: block;
+    background: linear-gradient(to bottom,#0AC5F9, #0681EF );
+    height: 700px;
+}
+
+.pricing-heading-main{
+    display: block;
+    /* border: solid; */
+    justify-content:space-around ;
+    color: #fff;
+    text-align: center;
+    padding: 35px;
+    font-size: 35px;
+    letter-spacing: 2px;    
+}
+
+.pricing-cards{
+    display: grid;
+    /* width: 1600px; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    padding-top: 15px;    
+    /* border: red solid; */
+    gap: 50px;
+    justify-content: center;
+    /* align-content: center; */
+    grid-auto-flow: column;
+}
+
+.pricing-card{
+    display: grid;
+    border: solid;
+    height: 500px;
+    width: 300px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding-top: 20px;
+    /* padding-left: 20px; */
+}
+
+.pricing-heading{
+    font-size: 25px;
+    padding-left: 30px;
+    padding-top: 30px;
+    /* margin-top: 10px; */
+    /* border: solid; */
+    height: 80px;
+    position: relative;
+    top: -20px;
+    border-radius: 10px;
+}
+
+.pricing-description{
+    position: relative;
+    /* border: solid; */
+    top: -48px;
+    font-size: 14px;
+    color: #758283;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+.package-features>.features{
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin-left: 10px;
+    /* border: solid; */
+    top: -20px;
+    list-style-image: url(../images/checked.svg);
+}
+
+.pricing-card > .btn, .price, .cancel-anytime {
+    justify-self: center;
+}
+
+.pricing-card:hover h2{
+    background-color: grey;   
+    color: #fff; 
+}
+
+.pricing-card:hover .pricing-description{
+    background-color: gray;
+    color: #fff;
+}
+
+.pricing-card:hover > .btn{
+    color: #ffff;
+    /* background-color: #0680EF; */
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #067eef9d 5%, #0680EF 100%);
+
+}
+
+.pricing-card > .btn{
+    border: 2px #24A7FF solid;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #24A7FF;
+    background-color: #ffff;
+}
+
+.btn:hover{      
+    color: #ffff;
+    /* background-color: #0680EF; */
+    box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #067eef9d 5%, #0680EF 100%);        
+}
+
+.cancel-anytime{
+    font-size: 10px;
+    position: relative;
+    top: -10px;
+    color: #758283;
+}
+
+/* Pricing section End  */
+
+
+/* Testimonaial section start */
+.testmonial{
+    display: grid;
+    /* border: red solid; */
+    text-align: center;
+    background-color: #eef0f0;
+}
+
+.testimonial-heading{
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: kanit;
+    margin-top: 100px;
+}
+
+.testimonial-description{
+    display: block;
+    font-size: 13px;
+    /* border: solid; */
+    width: 700px;    
+    text-align: center;
+    justify-self: center;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    color: #758283;
+}
+
+
+.testmonial-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: green solid; */
+    justify-self: center;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.testimonial-card{
+    width: 500px;
+    border: 2px #ced3d3ea solid;
+    padding: 20px;
+}
+
+.testimonial-card:hover{
+    background-color: #fff;
+    box-shadow: 0px 10px 14px -7px #505050;
+    border: none;
+}
+
+.testimonial-card-description{
+    text-align: left;
+    font-size: 15px;
+    color: #758283;
+}
+
+.customer-bullet{
+    position: relative;
+    /* border: solid; */
+    left: -200px;
+    top: -15px;
+}
+
+.customer, .customer-designation{
+    position: relative;
+    top: 35px;
+    left: -80px;
+}
+
+/* END ** Testimonaial section  */
+
+/* Start Large Footer with blue blackgroud image */
+
+.large-footer{
+    display: block;
+    background-image: url(../images/footer-bg.svg);
+    color: white;
+    height: 300px;
+}
+.large-footer h1{
+    position: relative;
+    display: block;
+    /* border: solid; */
+    width: 800px;
+    top: 70px;
+    left: 200px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.large-footer-description{
+    position: relative;
+    display: block;
+    /* border: solid; */
+    width: 600px;
+    top: 70px;
+    left: 200px;
+    font-size: 15px;  
+}
+
+.large-footer button{
+    position: relative;
+    left: 1200px;
+    background-color: transparent;
+    color: white;
+    height: 50px;
+    border: 1px white solid;
+}
+
+/* END Large Footer with blue blackgroud image */
+
+/*  Final Footer Section */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 80px;
+    padding-bottom: 100px;
+    padding-right: 80px;
+    gap: 80px;
+
+}
+
+.footer-logo-section{
+    position: relative;
+    left: 50px;
+    width: 300px;
+    /* padding-left: 80px; */
+    /* border: solid; */
+}
+
+.footer-logo-img{
+    width: 100px;
+}
+.footer-logo-desc{
+    font-size: 12px;    
+}
+
+.footer-menu-items, .links-menu-items, .Overview-items{
+    list-style: none;
+    line-height: 32px;
+    font-size: 12px;
+}
+
+.social-media, .menu-head{    
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+.social-media-icons{
+    position: relative;
+    top: 10px;
+    left: 28px;
+    padding-top: 10px;
+}
