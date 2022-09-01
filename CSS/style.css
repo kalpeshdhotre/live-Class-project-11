@@ -25,16 +25,16 @@ html{
 /* =================contains logo, menu item and REgister now button ================ */
 .header{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 4fr 1fr;
     /* border: solid; */
     padding: 25px;
     max-width: 1600px;    
 }
 
 .logo{
-    display: block;
+    /* display: block; */
     /* border: solid; */
-    width: 10vw;
+    /* max-width: 10vw; */
 }
 
 .menu-items{
@@ -42,15 +42,23 @@ html{
     list-style: none;   
     column-gap: 2em;
     /* border: solid; */
-    width: 59vw;
+    /* max-width: 89vw; */
     align-items: center;
     justify-content: space-evenly;
     font-weight: 400;
     font-size: 15px;
 }
 
+.btn-register-now{
+    /* width: 8em; */
+    display: flex;
+    /* border: solid; */
+    align-items: center;
+    justify-content: end;
+}
+
 .register-now{
-    width: 8em;
+    /* width: 8em; */
     border: 2px #24A7FF solid;
     border-radius: 10px;
     font-size: 17px;
@@ -59,12 +67,6 @@ html{
     background-color: #ffff;
 }
 
-.btn-register-now{
-    display: flex;
-    /* border: solid; */
-    align-items: center;
-    justify-content: end;
-}
 .register-now:hover{
     color: #fff;
     background-color: #24A7FF;
@@ -164,6 +166,7 @@ html{
 }
 
 .service-cards{
+    /* max-width: 1600px; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* border: solid; */
@@ -174,7 +177,7 @@ html{
     padding-bottom: 50px;
     /* height: 700px; */
     gap: 65px;
-    width: 75vw;
+    max-width: 75vw;
 }
 
 .service-card h2{
